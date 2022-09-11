@@ -220,7 +220,7 @@ public:
       gyroz = (float)gyroCount[2] * gRes;
     }
 
-    MadgwickQuaternionUpdate(delta_t, ax, ay, az, gyrox * PI / 180.0f, gyroy * PI / 180.0f, gyroz * PI / 180.0f);
+    MadgwickQuaternionUpdate(delta_t / 1000000.0f, ax, ay, az, gyrox * PI / 180.0f, gyroy * PI / 180.0f, gyroz * PI / 180.0f);
 
     // Define output variables from updated quaternion---these are Tait-Bryan angles, commonly used in aircraft orientation.
     // In this coordinate system, the positive z-axis is down toward Earth.
