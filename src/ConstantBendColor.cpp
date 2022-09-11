@@ -47,8 +47,6 @@ public:
 
     float bend_percentage = constrained_bend / max_board_pitch;
 
-    Serial.println(bend_percentage);
-
     current_color.r = progress(to_color.r, from_color.r, bend_percentage);
     current_color.b = progress(to_color.b, from_color.b, bend_percentage);
     current_color.g = progress(to_color.g, from_color.g, bend_percentage);
