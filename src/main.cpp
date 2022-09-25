@@ -1,9 +1,9 @@
 #include <Wire.h>
 #include <Arduino.h>
 
-#include "./Sensor.cpp"
-#include "./ConstantBendColor.cpp"
-#include "./ConstantColorLEDController.cpp"
+#include "Sensor.cpp"
+#include "ConstantBendColor.cpp"
+#include "ConstantColorLEDController.cpp"
 
 uint32_t lastUpdate = 0;
 uint32_t now = 0;
