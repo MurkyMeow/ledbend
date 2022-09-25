@@ -24,7 +24,7 @@ private:
 public:
   void update(unsigned long current_ms, mData color)
   {
-    if (current_ms - last_ms > 1000)
+    if (current_ms - last_ms > 100)
     {
       update_colors(color);
       last_ms = current_ms;
