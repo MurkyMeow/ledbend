@@ -11,8 +11,8 @@ float delta_t = 0.0f;
 
 Sensor sensor;
 
-RGBColor from_color{255, 0, 0};
-RGBColor to_color{0, 255, 0};
+RGBColor from_color{0, 255, 255};
+RGBColor to_color{255, 0, 0};
 
 ConstantBendColor color_state(25, from_color, to_color);
 
